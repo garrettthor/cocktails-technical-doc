@@ -12,7 +12,8 @@
 main {
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     width: 80%;
-    margin-left: 18rem;
+    margin-left: 16rem;
+    margin-right: 2rem;
     padding-left: 2rem;
 }
 
@@ -53,14 +54,16 @@ nav li {
 }
 
 nav li a {
+    font-family: "Courier New", Courier, monospace;
     text-decoration: underline;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 h1 {
     font-size: 2.5rem;
     text-decoration: underline;
+    margin-top: 2rem;
 }
 
 code {
@@ -71,16 +74,52 @@ code {
     margin: 2rem 0;
 }
 
+.drink-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
 .drink {
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 20rem;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: azure;
     padding: 1rem;
     margin: 1rem;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.success-card-btn {
+    background-color: rgb(0, 255, 42);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 3px solid rgb(0, 141, 24);
+    padding-top: 0.2rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.fail-card-btn {
+    background-color: rgb(255, 20, 20);
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
 }
 
 .lvl2 {
@@ -115,14 +154,50 @@ code {
 }
 
 @media screen and (max-width: 600px) {
+    #main-wrapper {
+        flex-direction: column;
+    }
+
     main {
-        width: 100%;
+        width: 90%;
         margin-left: 0;
+        padding-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     nav {
         width: 100%;
         height: auto;
         position: static;
+    }
+
+    nav header {
+        height: auto;
+    }
+
+    .drink-collection {
+        width: 100vw;
+    }
+
+    .top-button-zone {
+        display: block; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: red; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+    }
+
+    .top-button-zone a {
+        color: #fff;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+        text-decoration: none;
     }
 }

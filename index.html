@@ -11,140 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap"
         rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-
-    <style>
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-#main-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-main {
-    font-family: "Zen Kaku Gothic Antique", sans-serif;
-    width: 80%;
-    margin-left: 18rem;
-    padding-left: 2rem;
-}
-
-main p {
-    margin-left: 1rem;
-    font-weight: 400;
-}
-
-nav {
-    font-family: "Zen Kaku Gothic Antique", sans-serif;
-    width: 15rem;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    background-color: rgb(255, 245, 233);
-}
-
-nav span {
-    color: #000;
-    font-size: 1.8rem;
-    margin-left: 1rem;
-}
-
-nav header a {
-    text-decoration: none;
-    color: #000;
-}
-
-nav header {
-    border-bottom: 2px solid #000;
-    height: 4rem;
-}
-
-nav li {
-    list-style: none;
-    margin-top: 1rem;
-    margin-left: 1rem;
-}
-
-nav li a {
-    text-decoration: underline;
-    color: black;
-    font-size: 1.2rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    text-decoration: underline;
-}
-
-code {
-    font-family: "Courier New", monospace;
-}
-
-.main-section {
-    margin: 2rem 0;
-}
-
-.drink {
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: azure;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.lvl2 {
-    background-color: rgb(179, 252, 189);
-}
-
-.lvl3 {
-    background-color: rgb(255, 255, 189);
-}
-
-.min {
-    background-color: rgb(255, 118, 118);
-}
-
-.max {
-    background-color: rgb(123, 136, 255);
-}
-
-.drink ul {
-    padding-left: 1rem;
-}
-
-.drink h3 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.drink-recipe span {
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-@media screen and (max-width: 600px) {
-    main {
-        width: 100%;
-        margin-left: 0;
-    }
-
-    nav {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-}
-
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Technical Documentation</title>
 </head>
@@ -208,7 +75,7 @@ code {
                     drinks,
                     and must make each completely correct and to quality standards.</p>
         
-                <div class="drink-collection">
+                <section class="drink-collection">
         
                     <div class="drink lvl1">
                         <h3>Aperol Spritz</h3>
@@ -218,12 +85,305 @@ code {
                                 <li>2 oz Aperol</li>
                                 <li>1 oz soda water</li>
                             </ul>
-                            <span>Build / Ice filled wine glass / Orange Peel</span>
+                            <span>Build / Ice filled wine glass / Orange peel</span>
                         </code>
                     </div>
+
+                    <div class="drink lvl1">
+                        <h3>Bee's Knees</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.75 honey syrup</li>
+                                <li>0.75 lemon juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Champagne Cocktail</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1x bitters soaked sugar cube placed in bottom of Champagne flute</li>
+                            </ul>
+                            <span>Fill flute with Champagne</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Corpse Reviver no.2</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz gin</li>
+                                <li>0.75 oz Cointreau</li>
+                                <li>0.75 oz Lillet Blanc</li>
+                                <li>0.75 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Absinthe rinsed coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Daiquiri</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz white rum</li>
+                                <li>1 oz lime juice</li>
+                                <li>0.75 oz simple syrup</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wedge</span>
+                        </code>
+                    </div>
+                    
+                    <div class="drink lvl1">
+                        <h3>Dark n' Stormy</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Goslings Black Rum</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.5 oz ginger syrup</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Shake / Splash soda / Collines / Lime wedge & candied ginger</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Eastside</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>3 cucumber slices</li>
+                                <li>5-6 mint leaves</li>
+                            </ul>
+                            <span>Shake / Coupe / Mint & cucumber</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>French 75</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz gin</li>
+                                <li>0.5 oz simple syrup</li>
+                                <li>0.5 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Top with sparkling wine / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Gold Rush</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz bourbon</li>
+                                <li>0.75 oz honey syrup</li>
+                                <li>0.75 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Rocks / Lemon wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Last Word</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz gin</li>
+                                <li>0.75 oz Green Chartreause</li>
+                                <li>0.75 oz Luxardo Maraschino</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Manhattan</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiskey</li>
+                                <li>1 oz sweet vermouth</li>
+                                <li>2d Angostura Bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Margarita</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz tequila</li>
+                                <li>0.75 oz Cointreau</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>0.25 oz agave syrup</li>
+                            </ul>
+                            <span>Shake / Salt rimmed rocks / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Martini</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin or vodka</li>
+                                <li>1 oz dry vermouth</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+                
         
-                </div>
-        
+                    <div class="drink lvl1">
+                        <h3>Mojito</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz white rum</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>8-10 oz mint leaves</li>
+                            </ul>
+                            <span>Muddle mint, lime, and simple / Add rum & ice / Top with soda / Collins / Lime wedge & mint crown</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Moscow Mule</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz vodka</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.5 oz ginger syrup</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>2d dash Angostura</li>
+                            </ul>
+                            <span>Shake / Splash of soda / Collins / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Negroni</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz gin</li>
+                                <li>1 oz Campari</li>
+                                <li>1 oz sweet vermouth</li>
+                            </ul>
+                            <span>Stir / Rocks / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Old Fashioned</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz bourbon</li>
+                                <li>0.25 oz demarara syrup</li>
+                                <li>2d dash Angostura</li>
+                                <li>1d orange bitters</li>
+                            </ul>
+                            <span>Stir / Rocks glass with large cube / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Penicillin</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz bourbon</li>
+                                <li>3/8 oz ginger syrup</li>
+                                <li>3/8 oz honey syrup</li>
+                                <li>0.75 oz lemon juice</li>
+                                <li>0.25 oz Islay Scotch float</li>
+                            </ul>
+                            <span>Shake / Rocks / Islay float / Candied ginger</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Rob Roy</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Scotch whisky</li>
+                                <li>1 oz sweet vermouth</li>
+                                <li>3d Peychaud's bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Sazerac</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiskey</li>
+                                <li>0.25 rich simple syrup</li>
+                                <li>3d Peychaud's bitters</li>
+                            </ul>
+                            <span>Stir / Chilled small whisky glass washed with Absinthe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Sidecar</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Cognac</li>
+                                <li>1 oz Cointreau</li>
+                                <li>0.5 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Sugar rimmed Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Sherry Cobler</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>3 oz Amontillado sherry</li>
+                                <li>0.25 oz simple syrup</li>
+                                <li>1 lemon slice</li>
+                                <li>1 orange slice</li>
+                            </ul>
+                            <span>Muddle citrus and syrup / Add sherry / Shake / Collins with crushed ice / Fruits</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Vieux Carre</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz Cognac</li>
+                                <li>1 oz rye</li>
+                                <li>0.25 oz Benedictine</li>
+                                <li>1 oz sweet vermouth</li>
+                                <li>2d Angostura bitters</li>
+                                <li>2d Peychaud's bitters</li>
+                            </ul>
+                            <span>Stir / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl1">
+                        <h3>Whiskey Sour</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz bourbon</li>
+                                <li>1 oz simple syrup</li>
+                                <li>1 oz lemon juice</li>
+                                <li>1 oz egg white</li>
+                            </ul>
+                            <span>Reverse dry shake / Sour / 3d Angostura floated on foam</span>
+                        </code>
+                    </div>
+                        
+                </section>
+
             </section>
         
             <section id="Level_Two_Cocktails" class="main-section">
@@ -239,7 +399,7 @@ code {
                     this
                     level.</p>
         
-                <div class="drink-collection">
+                <section class="drink-collection">
         
                     <div class="drink lvl2">
                         <h3>Airmail</h3>
@@ -252,7 +412,315 @@ code {
                             <span>Shake / Coupe / Top with sparkling wine / Lime wedge</span>
                         </code>
                     </div>
-                </div>
+
+                    <div class="drink lvl2">
+                        <h3>Americano</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Campari</li>
+                                <li>1.5 oz sweet vermouth</li>
+                            </ul>
+                            <span>Build / Collins / Top with soda / Orange flag</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Army & Navy</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.75 orgeat</li>
+                                <li>0.75 oz lemon juice</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Aviation</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>3/8 oz Luxardo Maraschino</li>
+                                <li>3/8 oz Creme De Yvette</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Black Manhattan</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiskey</li>
+                                <li>1 oz Averna</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Boulevardier</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz bourbon</li>
+                                <li>1 oz Campari</li>
+                                <li>1 oz sweet vermouth</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>De La Louisiane</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiksey</li>
+                                <li>0.75 oz Benedictine</li>
+                                <li>0.5 oz sweet vermouth</li>
+                                <li>2d Peychaud's bitters</li>
+                            </ul>
+                            <span>Stir / Coupe / Brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Espresso Martini</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz vodka</li>
+                                <li>2 oz Mr. Black</li>
+                                <li>1 oz heavy cream</li>
+                            </ul>
+                            <span>Shake / Coupe / Whipped cream float on top</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Hanky Panky</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.75 oz sweet vermouth</li>
+                                <li>0.25 oz Fernet Branca</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Hotel Nacionál</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz white rum</li>
+                                <li>0.25 oz apricot liqueur</li>
+                                <li>0.25 oz simple syrup</li>
+                                <li>1 oz pineapple juice</li>
+                                <li>0.5 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Japanese Cocktail</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                               <li>2.5 oz Cognac</li>
+                               <li>0.5 oz orgeat</li>
+                               <li>3d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon zest</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Jungle Bird</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Blackstrap Rum</li>
+                                <li>0.75 oz Campari</li>
+                                <li>1 oz pineapple juice</li>
+                                <li>0.5 oz simple syrup</li>
+                                <li>0.5 oz lime juice</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon zest</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>La Rosita</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz reposado tequila</li>
+                                <li>0.5 oz Campari</li>
+                                <li>0.5 oz sweet vermouth</li>
+                                <li>0.5 oz dry vermouth</li>
+                                <li>1d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Orange twist</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Mai Tai</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz aged rum</li>
+                                <li> 0.5 oz Cointreau</li>
+                                <li>0.5 orgeat</li>
+                                <li>1 oz lime juice</li>
+                            </ul>
+                            <span>Whip shake / Rocks with pepple ice / lime wedge & brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Martinez</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Old Tom Gin</li>
+                                <li>1.5 oz sweet vermouth</li>
+                                <li>1 bar spoon Luxardo Mararschino</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Mint Julep</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2.5 oz bourbon</li>
+                                <li>0.5 oz simple syrup</li>
+                                <li>10-12 mint leaves</li>
+                            </ul>
+                            <span>Muddle mint ans syrup in julep cup.  Fill with crushed ice.  Pour bourbon over ice into cup.  Briefly stir.  Add more ice and make a mound.  Add large mint crown and straw.</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Naked and Famous</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz mezcal</li>
+                                <li>0.75 oz Yellow Chartreause</li>
+                                <li>0.75 oz Aperol</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>New York Sour</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiskey</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.75 oz lemon juice</li>
+                                <li>1 oz egg white</li>
+                            </ul>
+                            <span>Reverse dry shake / Rocks / Red wine float / Lemon wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Paper Plane</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz bourbon</li>
+                                <li>0.75 oz Aperol</li>
+                                <li>0.75 oz Amaro Nonino</li>
+                                <li>0.75 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Pimms Cup</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz Pimms</li>
+                                <li>0.5 oz simple syrup</li>
+                                <li>0.5 oz lemon juice</li>
+                                <li>0.5 oz lime juice</li>
+                                <li>2x Cucumber slices</li>
+                                <li>1x Strawberry - hulled</li>
+                            </ul>
+                            <span>Muddle cucumber, strawberry, and simple syrup.  Add remaining ingredients.  Shake / Collins / Top with ginger ale / Mint, cucumber, strawberry garnish</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Piña Colada</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz white rum</li>
+                                <li>1.5 oz coconut cream</li>
+                                <li>1.5 oz pineapple juice</li>
+                                <li>0.5 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Hurricane / Pineapple wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Rolls Royce</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.5 oz sweet vermouth</li>
+                                <li>0.5 oz dry vermouth</li>
+                                <li>0.25 oz Benedictine</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Rusty Rail</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Scotch whisky</li>
+                                <li>0.75 oz Drambuie</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>Tuxedo no.2</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>0.75 oz dry vermouth</li>
+                                <li>0.25 oz Luxardo Maraschino</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Absinthe rinsed Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl2">
+                        <h3>White Russian</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Vodka</li>
+                                <li>1 oz Kahlua</li>
+                                <li>0.75 oz heavy cream</li>
+                            </ul>
+                            <span>Build / Rocks</span>
+                        </code>
+                    </div>
+
+                </section>
         
             </section>
         
@@ -265,7 +733,7 @@ code {
                 <p>These are wonderful and strange libations, sure to satisfy the most discerning and adventurous guests.</p>
                 <p>Another exam of 5 random drinks will be administered in order to write new drinks for the bar.</p>
 
-                <div class="drink-collection">
+                <section class="drink-collection">
                 
                     <div class="drink lvl3">
                         <h3>Amaretto Sour</h3>
@@ -280,7 +748,334 @@ code {
                             <span>Reverse dry shake / Rocks / Lemon wedge and brandied cherry</span>
                         </code>
                     </div>
-                </div>
+
+                    <div class="drink lvl3">
+                        <h3>Bamboo</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz dry vermouth</li>
+                                <li>1.5 oz Fino sherry</li>
+                                <li>0.25 oz simple syrup</li>
+                                <li>2d Angostura bitters</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Bijou</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz gin</li>
+                                <li>0.75 oz Green Chartreause</li>
+                                <li>0.75 oz sweet vermouth</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Bobby Burns</h3>
+                        <code class="drink-recipe">
+                            <ul></ul>
+                                <li>2 oz Scotch whisky</li>
+                                <li>0.75 oz sweet vermouth</li>
+                                <li>0.25 oz Benedictine</li>
+                            </ul>
+                            <span>Stir / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Champs Élysées</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Cognac</li>
+                                <li>0.5 oz Yellow Chartreause</li>
+                                <li>0.75 oz lemon juice</li>
+                                <li>0.25 simple syrup</li>
+                                <li>1d Angostura bitters</li>
+                            </ul>
+                            <span>Shake / Nick & Nora / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Chet Baker</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz aged rum</li>
+                                <li>0.5 Punt e Mes</li>
+                                <li>0.25 honey syrup</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Build / Rocks with large cube / Stir / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Chrysanthemum</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz dry vermouth</li>
+                                <li>0.75 oz Benedictine</li>
+                                <li>1 bar spoon Absinthe</li>
+                                <li>1d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Diamondback</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz rye whiskey</li>
+                                <li>0.75 oz apple brandy</li>
+                                <li>0.75 oz Yellow Chartreause</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Brandied cherry</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Fogcutter</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz agricole rhum</li>
+                                <li>0.5 oz Cognac</li>
+                                <li>0.5 oz gin</li>
+                                <li>0.5 oz Cointreau</li>
+                                <li>0.5 oz Amontillado sherry (float)</li>
+                                <li>0.75 oz orgeat</li>
+                                <li>1 oz lemon juice</li>
+                            </ul>
+                            <span>Whip / Rocks with pebble ice / Amontillado float / Mint bouquet</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Jet Pilot</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz black rum</li>
+                                <li>0.75 oz aged rum</li>
+                                <li>0.75 oz overproof aged rum</li>
+                                <li>0.5 oz velvet falernum</li>
+                                <li>0.5 cinnamon syrup</li>
+                                <li>1 bar spoon Absinthe</li>
+                                <li>1d Angostura bitters</li>
+                            </ul>
+                            <span>Swizzle / Tiki mug / Lots of garnishes</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Lemon Drop</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz citrus vodka</li>
+                                <li>0.5 oz Cointreau</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>1 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Sugar rimmed coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Oaxacan Old Fashioned</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz reposado tequila</li>
+                                <li>0.5 oz mezcal</li>
+                                <li>0.25 oz agave syrup</li>
+                                <li>2d mole bitters</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Pink Gin</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>3 oz gin</li>
+                                <li>6d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Rocks</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Prince Edward</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz Scotch whisky</li>
+                                <li>0.75 oz Lillet Blanc</li>
+                                <li>0.25 oz Drambuie</li>
+                                <li>2d orange bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Queen's Park Swizzle</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz white rum</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>8-10 mint leaves</li>
+                            </ul>
+                            <span>Muddle mint, lime, & simple in Collins. Add rum & pebble ice. Swizzle. Top heavily with Peychaud's bitters to create a float on top. Lime wedge & mint crown</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Ramos Gin Fizz</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz gin</li>
+                                <li>1 oz simple syrup</li>
+                                <li>0.5 oz lemon juice</li>
+                                <li>0.5 oz lime juice</li>
+                                <li>1 oz heavy cream</li>
+                                <li>1 oz egg white</li>
+                                <li>3 drop orange flower water</li>
+                            </ul>
+                            <span>Reverse dry shake / Collins / Top with 2 oz soda water / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Red Hook</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz rye whiskey</li>
+                                <li>0.5 oz Punt e Mes</li>
+                                <li>0.5 oz Luxardo Maraschino</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Brandied Cherry</span>
+                        </code>
+                    </div>
+                    
+                    <div class="drink lvl3">
+                        <h3>Rome With A View</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz Campari</li>
+                                <li>1 oz dry vermouth</li>
+                                <li>0.75 oz simple syrup</li>
+                                <li>1 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Collins / Top with soda / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Royal Bermuda Yacht Club</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz aged rum</li>
+                                <li>0.5 oz velvet falernum</li>
+                                <li>0.5 oz Cointreau</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Scorpion</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz black rum</li>
+                                <li>0.75 oz Cognac</li>
+                                <li>0.75 oz orgeat</li>
+                                <li>0.75 oz lime juice</li>
+                                <li>0.75 oz orange juice</li>
+                                <li>3d Peychaud's bitters</li>
+                            </ul>
+                            <span>Shake / Tiki mug / All the garnishes</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Tattletale</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.25 oz blended Scotch whisky</li>
+                                <li>0.75 oz Islay Scotch whisky</li>
+                                <li>0.25 oz honey syrup</li>
+                                <li>3d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Orange & lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Three Dots And A Dash</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz agricole rhum</li>
+                                <li>0.5 oz aged rum</li>
+                                <li>0.5 oz velvet falernum</li>
+                                <li>0.25 oz allspice dram</li>
+                                <li>0.5 oz honey syrup</li>
+                                <li>0.5 oz lime juice</li>
+                                <li>0.5 oz orange juice</li>
+                                <li>1d Angostura bitters</li>
+                                
+                            </ul>
+                            <span>Stir / Collins / 3x brandied cherries on a pick</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Tipperary</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Irish whisky</li>
+                                <li>1 oz sweet vermouth</li>
+                                <li>0.5 oz Green Chartreause</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Orange peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Trinidad Sour</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Angostura bitters</li>
+                                <li>0.5 oz rye whiskey</li>
+                                <li>0.75 oz orgeat</li>
+                                <li>0.75 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink lvl3">
+                        <h3>Widow's Kiss</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz apple brandy</li>
+                                <li>0.25 oz Yellow Chartreause</li>
+                                <li>0.25 oz Benedictine</li>
+                                <li>2d Angostura bitters</li>
+                            </ul>
+                            <span>Stir / Nick & Nora</span>
+                        </code>
+                    </div>
+
+
+                </section>
         
         
         
@@ -296,7 +1091,7 @@ code {
                     delightfully new.
                 </p>
 
-                <div class="drink-collection">
+                <section class="drink-collection">
                 
                     <div class="drink min">
                         <h3>Guava Daiquiri</h3>
@@ -304,13 +1099,119 @@ code {
                             <ul>
                                 <li>2 oz white rum</li>
                                 <li>1 oz lime juice</li>
-                                <li>0.75  ozsimple syrup</li>
+                                <li>0.75 oz simple syrup</li>
                                 <li>0.75 oz Perfect Puree Guava</li>
                             </ul>
                             <span>Shake / Coupe / Lime wedge</span>
                         </code>
                     </div>
-                </div>
+
+                    <div class="drink min">
+                        <h3>Fuji Apple Old Fashioned</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz bourbon</li>
+                                <li>1 oz Lairds Applejack</li>
+                                <li>0.25 oz Fuji apple and brown sugar syrup</li>
+                                <li>2d BarKeep apple bitters</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Moraccan Mint Mule</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz mint Haku vodka</li>
+                                <li>0.75 oz mint syrup</li>
+                                <li>0.5 oz ginger syrup</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Splash soda / Collins / Mint crown & lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Papaya Margarita</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz tequila or mezcal</li>
+                                <li>0.75 oz Perfect Puree Papaya</li>
+                                <li>0.75 oz agave syrup</li>
+                                <li>1 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Rocks glass with black lava sea salt / Lime wedge</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Vietnamese Spritz</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz jujube tea infused Aperol</li>
+                                <li>0.5 oz Giffard Lychee</li>
+                                <li>1 oz orange juice</li>
+                                <li>0.25 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Sparkling top / Wine glass with ice / Orange flag & dried jujubes</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Thai Basil Martini</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2.25 oz Thai basicl infused Old Harbor gin</li>
+                                <li>0.75 oz Yellow Chartreause</li>
+                                <li>2d bamboo salt tincture</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lime peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Tamarind Grapefruit Gold Rush</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz bourbon</li>
+                                <li>0.75 oz Liquid Alchemist Tamarind syrup</li>
+                                <li>0.5 oz honey syrup</li>
+                                <li>0.25 Giffard Pamplemouse</li>
+                                <li>1 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Rocks / Dehydrated lemon wheel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Lemongrass & Banana Gin Sour</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz gin</li>
+                                <li>1 oz Giffard Banane</li>
+                                <li>0.75 lemongrass syrup</li>
+                                <li>0.5 oz lemon juice</li>
+                                <li>0.5 oz lime juice</li>
+                                <li>1 oz heavy cream</li>
+                                <li>1 oz egg white</li>
+                            </ul>
+                            <span>Reverse dry shake / Collins no ice / Dehydrated banana chips</span>
+                        </code>
+                    </div>
+
+                    <div class="drink min">
+                        <h3>Shot of Rocket Fuel</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz batched (Mr. Black & butter fat-washed Cruzan Black Strap)</li>
+                            </ul>
+                            <span>Pour 'em up</span>
+                        </code>
+                    </div>
+
+
+                </section>
         
             </section>
         
@@ -324,7 +1225,7 @@ code {
                     combined
                     to thrill the palatte and soul.</p>
 
-                <div class="drink-collection">
+                <section class="drink-collection">
                 
                     <div class="drink max">
                         <h3>Singapore Sling</h3>
@@ -339,15 +1240,107 @@ code {
                             <span>Whip shake / Big flute topped with pebble ice / Pineapple wedge / Brandied cherry</span>
                         </code>
                     </div>
-                </div>
+
+                    <div class="drink max">
+                        <h3>Saigon Moped</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz debitterized bitter melon infused gin</li>
+                                <li>0.75 oz sesame leaf syrup</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Rocks with Mugwort salt rim / Dehydrated lime wheel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>Korrine's Mispelled Name</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>0.75 oz Misadventure Vodka</li>
+                                <li>1.5 oz batched (Ramazzotti & Italicus)</li>
+                                <li>0.5 oz sweet vermouth</li>
+                            </ul>
+                            <span>Shake / Coupe / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>French Architecture</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz 7 Caves Lemongrass Distillate</li>
+                                <li>1 oz Fair Kumquat liqueur</li>
+                                <li>0.5 oz lemon juice</li>
+                            </ul>
+                            <span>Shake / Nick & Nora with sugar rim / Lemon peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>Ozymandias</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz batched (Abasolo & crust of overcooked rice tea inf. aquavit)</li>
+                                <li>0.5 oz Xtabentun</li>
+                            </ul>
+                            <span>Stir / Rocks with large cube / Fennel flower</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>Amigo Ruffo</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz blanco tequila</li>
+                                <li>1 oz batched (Ancho Reyes Verde & Skinos)</li>
+                                <li>2d Bitter Queens Thai Spice bitters</li>
+                                <li>2d acid phosphate</li>
+                            </ul>
+                            <span>Stir / Nick & Nora / Lime peel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>Eastern Dolomites</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz batched (China China Amaro & Montenegro)</li>
+                                <li>0.75 oz Lustau sweet vermouth</li>
+                                <li>0.5 oz Chinese 5 spice syrup</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wheel</span>
+                        </code>
+                    </div>
+
+                    <div class="drink max">
+                        <h3>Jungle Fang</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1 oz tequila</li>
+                                <li>1 oz Huana</li>
+                                <li>1.5 oz Thai coconut milk</li>
+                                <li>1.5 oz pineapple juice</li>
+                                <li>0.75 lime juice</li>
+                            </ul>
+                            <span>Whip / Big flute with pebble ice / Pineapple leaf & pineapple wedge</span>
+                        </code>
+                    </div>
+
+                </section>
         
             </section>
         </main>    
     
     </div>
+
+    <div class="top-button-zone">
+        <a href="#top">Top</a>
+    </div>
     
 
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     
 </body>
 </html>
