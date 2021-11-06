@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Zen+Kaku+Gothic+Antique:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <style>
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    width: 80%;
+    margin-left: 18rem;
+    padding-left: 2rem;
+}
+
+main p {
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+nav {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: rgb(255, 245, 233);
+}
+
+nav span {
+    color: #000;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+nav header a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav header {
+    border-bottom: 2px solid #000;
+    height: 4rem;
+}
+
+nav li {
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+nav li a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
+
+.main-section {
+    margin: 2rem 0;
+}
+
+.drink {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: azure;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.lvl2 {
+    background-color: rgb(179, 252, 189);
+}
+
+.lvl3 {
+    background-color: rgb(255, 255, 189);
+}
+
+.min {
+    background-color: rgb(255, 118, 118);
+}
+
+.max {
+    background-color: rgb(123, 136, 255);
+}
+
+.drink ul {
+    padding-left: 1rem;
+}
+
+.drink h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.drink-recipe span {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}
+
+    </style>
+
+    <title>Technical Documentation</title>
+</head>
+<body>
+
+    <div id="main-wrapper">
+
+        <nav id="navbar">
+            <header>
+                <a href="#top"><span>Bar Ops Manual</span></a>
+            </header>
+
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Level_One_Cocktails">Level One Cocktails</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Level_Two_Cocktails">Level Two Cocktails</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Level_Three_Cocktails">Level Three Cocktails</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Minimalist">Minimalist</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Maximalist">Maximalist</a>
+            </ul>
+            
+        </nav>
+
+        <main id="main-doc">
+
+            <h1>Bar Operations Manual</h1>
+        
+            <section id="Introduction" class="main-section">
+        
+                <header>
+                    <h2>Introduction</h2>
+                </header>
+        
+                <p>The following document contains three levels of classic cocktails which one would expect to be able to make
+                    in any
+                    bar of quality.</p>
+                <p>Please study Level One and the Minimalist and Maximalist drinks first in order to be prepared to bartend.
+                    Levels Two
+                    and Three may be studied and completed at your own pace.</p>
+            </section>
+        
+            <section id="Level_One_Cocktails" class="main-section">
+        
+                <header>
+                    <h2>Level One Cocktails</h2>
+                </header>
+        
+                <p>These classics will be ordered often. Master them.</p>
+                <p>You must know all these drinks in order to bartend. You must complete a pass/fail exam of 5 randomly selected
+                    drinks,
+                    and must make each completely correct and to quality standards.</p>
+        
+                <div class="drink-collection">
+        
+                    <div class="drink lvl1">
+                        <h3>Aperol Spritz</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>3 oz Prosseco</li>
+                                <li>2 oz Aperol</li>
+                                <li>1 oz soda water</li>
+                            </ul>
+                            <span>Build / Ice filled wine glass / Orange Peel</span>
+                        </code>
+                    </div>
+        
+                </div>
+        
+            </section>
+        
+            <section id="Level_Two_Cocktails" class="main-section">
+        
+                <header>
+                    <h2>Level Two Cocktails</h2>
+                </header>
+        
+                <p>These drinks are a little more advanced, some require a developed palatte. If someone orders one of these,
+                    they
+                    expect flawless execution.</p>
+                <p>In order to be allowed to engage in <strong>"Dealer's Choice"</strong>, one must pass another 5 drink exam in
+                    this
+                    level.</p>
+        
+                <div class="drink-collection">
+        
+                    <div class="drink lvl2">
+                        <h3>Airmail</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz aged rum</li>
+                                <li>0.75 oz honey syrup</li>
+                                <li>0.75 oz lime juice</li>
+                            </ul>
+                            <span>Shake / Coupe / Top with sparkling wine / Lime wedge</span>
+                        </code>
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section id="Level_Three_Cocktails" class="main-section">
+        
+                <header>
+                    <h2>Level Three Cocktails</h2>
+                </header>
+        
+                <p>These are wonderful and strange libations, sure to satisfy the most discerning and adventurous guests.</p>
+                <p>Another exam of 5 random drinks will be administered in order to write new drinks for the bar.</p>
+
+                <div class="drink-collection">
+                
+                    <div class="drink lvl3">
+                        <h3>Amaretto Sour</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz Amaretto</li>
+                                <li>0.75 oz bourbon</li>
+                                <li>0.75 oz lemon juice</li>
+                                <li>1 bar spoon demarara syrup</li>
+                                <li>0.5 oz egg white</li>
+                            </ul>
+                            <span>Reverse dry shake / Rocks / Lemon wedge and brandied cherry</span>
+                        </code>
+                    </div>
+                </div>
+        
+        
+        
+            </section>
+        
+            <section id="Minimalist" class="main-section">
+        
+                <header>
+                    <h2>Minimalist</h2>
+                </header>
+        
+                <p>These represent our variations on tried-and-true favorites. They are designed to be accessible, yet
+                    delightfully new.
+                </p>
+
+                <div class="drink-collection">
+                
+                    <div class="drink min">
+                        <h3>Guava Daiquiri</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>2 oz white rum</li>
+                                <li>1 oz lime juice</li>
+                                <li>0.75  ozsimple syrup</li>
+                                <li>0.75 oz Perfect Puree Guava</li>
+                            </ul>
+                            <span>Shake / Coupe / Lime wedge</span>
+                        </code>
+                    </div>
+                </div>
+        
+            </section>
+        
+            <section id="Maximalist" class="main-section">
+        
+                <header>
+                    <h2>Maximalist</h2>
+                </header>
+        
+                <p>The Maximalist contains complex and advanced cocktails. Here you will find the obscure and exotic elements
+                    combined
+                    to thrill the palatte and soul.</p>
+
+                <div class="drink-collection">
+                
+                    <div class="drink max">
+                        <h3>Singapore Sling</h3>
+                        <code class="drink-recipe">
+                            <ul>
+                                <li>1.5 oz gin</li>
+                                <li>1 oz batched (Benedictine, Pierre Ferrand Dry Curaçao, & Luxardo Sangue Morlacco Cherry)</li>
+                                <li>3/8 oz grenadine</li>
+                                <li>3 oz pineapple juice</li>
+                                <li>0.5 oz lime juice</li>
+                            </ul>
+                            <span>Whip shake / Big flute topped with pebble ice / Pineapple wedge / Brandied cherry</span>
+                        </code>
+                    </div>
+                </div>
+        
+            </section>
+        </main>    
+    
+    </div>
+    
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>

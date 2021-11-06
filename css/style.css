@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    width: 80%;
+    margin-left: 18rem;
+    padding-left: 2rem;
+}
+
+main p {
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+nav {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    width: 15rem;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    background-color: rgb(255, 245, 233);
+}
+
+nav span {
+    color: #000;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+
+nav header a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav header {
+    border-bottom: 2px solid #000;
+    height: 4rem;
+}
+
+nav li {
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+nav li a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+code {
+    font-family: "Courier New", monospace;
+}
+
+.main-section {
+    margin: 2rem 0;
+}
+
+.drink {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: azure;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.lvl2 {
+    background-color: rgb(179, 252, 189);
+}
+
+.lvl3 {
+    background-color: rgb(255, 255, 189);
+}
+
+.min {
+    background-color: rgb(255, 118, 118);
+}
+
+.max {
+    background-color: rgb(123, 136, 255);
+}
+
+.drink ul {
+    padding-left: 1rem;
+}
+
+.drink h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.drink-recipe span {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}
