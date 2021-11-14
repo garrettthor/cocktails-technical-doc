@@ -9,6 +9,41 @@
     flex-direction: row;
 }
 
+.hide {
+    display: none !important;
+}
+
+#login {
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    width: 100%;
+    height: 8rem;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#login input {
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+}
+
+#login button {
+    width: 55%;
+    height: 2rem;
+    background-color: rgb(35, 150, 54);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.25rem;
+}
+
 main {
     font-family: "Zen Kaku Gothic Antique", sans-serif;
     width: 80%;
@@ -100,28 +135,6 @@ code {
     align-items: center;
 }
 
-.success-card-btn {
-    background-color: rgb(0, 255, 42);
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border: 3px solid rgb(0, 141, 24);
-    padding-top: 0.2rem;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 1rem;
-}
-
-.fail-card-btn {
-    background-color: rgb(255, 20, 20);
-    border-radius: 5px;
-    padding: 0.5rem;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: 1rem;
-}
-
 .lvl2 {
     background-color: rgb(179, 252, 189);
 }
@@ -163,9 +176,9 @@ code {
     }
 
     main {
-        width: 90%;
+        width: 100%;
         margin-left: 0;
-        padding-left: 0.5rem;
+        padding-left: 0;
         margin-right: 0.5rem;
     }
 
@@ -179,8 +192,16 @@ code {
         height: auto;
     }
 
+    .drink {
+        width: 90%;
+        margin: 0.25rem 0;
+        padding: 0.25rem;
+    }
+
     .drink-collection {
         width: 100vw;
+        flex-direction: column;
+        align-items: center;
     }
 
     .top-button-zone {
@@ -192,10 +213,9 @@ code {
         border: none; /* Remove borders */
         outline: none; /* Remove outline */
         background-color: red; /* Set a background color */
-        color: white; /* Text color */
         cursor: pointer; /* Add a mouse pointer on hover */
-        padding: 15px; /* Some padding */
-        border-radius: 10px; /* Rounded corners */
+        padding: 10px; /* Some padding */
+        border-radius: 5px; /* Rounded corners */
         font-size: 18px; /* Increase font size */
     }
 
