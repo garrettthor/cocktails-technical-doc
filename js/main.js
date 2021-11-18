@@ -11,6 +11,7 @@ function checkPin() {
     if (pinEntry === pin) {
         document.querySelector('#main-doc').classList.remove('hide');
         document.querySelector('#login').classList.add('hide');
+        document.querySelectorAll('*').focus();
     } else {
         alert('Incorrect PIN');
     }
